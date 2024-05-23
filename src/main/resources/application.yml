@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: WebLogger
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/day0228_log?serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+
+server:
+  port: 8080
+
+# 日志（输出到控制台）
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
